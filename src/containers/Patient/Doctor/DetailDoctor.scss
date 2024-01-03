@@ -1,0 +1,148 @@
+.doctor-detail-container {
+  margin: 10px 50px;
+
+  .intro-doctor {
+    display: flex;
+    padding: 20px;
+
+    .content-left {
+      width: 20%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      .image-avata {
+        width: 170px;
+        height: 170px;
+        border-radius: 50%;
+        text-align: center;
+      }
+    }
+
+    .content-right {
+      width: 80%;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: flex-start;
+      padding-left: 10px;
+
+      .top {
+        font-size: 20px;
+        font-weight: 600;
+      }
+
+      .bottom {
+        margin: 10px 0;
+        width: 70%;
+      }
+    }
+  }
+
+  .schedule-doctor {
+    padding: 0 20px 20px 20px;
+    display: flex;
+    // height: 200px;
+    .content-left {
+      width: 60%;
+    }
+    .content-right {
+      width: 40%;
+    }
+  }
+
+  .detail-infor-doctor {
+    border-radius: 15px;
+    background: #f9f9f9;
+    padding: 20px;
+    // margin-top: 20px;
+    box-shadow: 1px 1px 3px -1px gray;
+    img {
+      display: flex;
+      margin: 0 auto;
+      width: 90%;
+    }
+  }
+
+  .comment-doctor {
+  }
+}
+@media only screen and (max-width: 768px) {
+  .doctor-detail-container {
+    margin: 10px !important;
+
+    .intro-doctor {
+      display: flex;
+      padding: 0px !important;
+      flex-wrap: wrap;
+      justify-content: center;
+
+      .content-left {
+        width: unset;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        .image-avata {
+          width: 170px;
+          height: 170px;
+          border-radius: 50%;
+          text-align: center;
+        }
+      }
+
+      .content-right {
+        width: unset;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center !important;
+        padding-left: 10px;
+
+        .top {
+          font-size: 20px;
+          font-weight: 600;
+        }
+
+        .bottom {
+          margin: 10px 0;
+          width: unset;
+        }
+      }
+    }
+
+    .schedule-doctor {
+      padding: 0 10px 10px 10px !important;
+      display: flex;
+      flex-direction: column;
+      .content-left {
+        width: unset;
+        .doctor-schedule-container {
+          border-right: unset;
+        }
+      }
+      .content-right {
+        width: unset;
+        .name-clinic {
+          font-size: unset;
+        }
+      }
+    }
+
+    .detail-infor-doctor {
+      border-radius: 15px;
+      background: #f9f9f9;
+      padding: 20px;
+      // margin-top: 20px;
+      box-shadow: 1px 1px 3px -1px gray;
+      img {
+        display: flex;
+        margin: 0 auto;
+        width: 90%;
+      }
+    }
+
+    .comment-doctor {
+    }
+  }
+}

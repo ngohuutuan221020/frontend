@@ -1,0 +1,81 @@
+.login-background {
+  background-color: rgb(243, 243, 243);
+  height: 100vh;
+
+  .login-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    margin: auto;
+    width: 400px;
+    height: 500px;
+    border-radius: 15px;
+    background-color: white;
+    .login-content {
+      padding: 40px;
+      .text-login {
+        text-align: center;
+        font-weight: 600;
+        font-size: 25px;
+        padding-top: 10px;
+      }
+      .login-input {
+        margin: 7px 0;
+        .custom-input-password {
+          position: relative;
+          .eye {
+            position: absolute;
+            right: 5px;
+            top: 10px;
+            cursor: pointer;
+          }
+        }
+      }
+      .btn-login {
+        width: 100%;
+        margin: 10px 0;
+        height: 45px;
+        border-radius: 15px;
+        outline: none;
+        border: none;
+        background-color: #0d6efd;
+        color: white;
+        font-size: 16px;
+      }
+      .forgot-password {
+        font-size: 13px;
+      }
+      .social-login {
+        display: flex;
+        text-align: center;
+        justify-content: space-evenly;
+        margin-top: 10px;
+
+        .google {
+          font-size: 30px;
+          background: #dc3545;
+          border-radius: 50px;
+          height: 50px;
+          width: 50px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          color: #ffffff;
+        }
+        .facebook {
+          font-size: 30px;
+          background: #0d6efd;
+          border-radius: 50px;
+          height: 50px;
+          width: 50px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          color: #ffffff;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,208 @@
+.section-share {
+  &.section-specialty {
+    background: rgb(245, 244, 244);
+    margin: 0 30px;
+    border-radius: 25px;
+  }
+  &.section-medical-facility {
+    background: rgb(255, 255, 255);
+    margin: 0 30px;
+    border-radius: 25px;
+  }
+  &.section-handBook {
+    background: rgb(255, 255, 255);
+    margin: 0 30px;
+    border-radius: 25px;
+  }
+  &.section-outStanding-doctor {
+    background: rgb(245, 244, 244);
+    margin: 0 30px;
+    border-radius: 25px;
+  }
+  &.section-about {
+    background: rgb(255, 255, 255);
+    margin: 0 30px;
+    border-radius: 25px;
+  }
+  .section-body {
+    .specialty-custimize {
+      cursor: pointer;
+      border: none;
+      outline: none;
+      align-items: center;
+      .outer-background {
+        // border: 1px solid;
+        margin: 0 50px;
+        border-radius: 15px;
+        .position {
+          font-size: 17px;
+          font-weight: 600;
+        }
+      }
+      .background {
+        width: 150px;
+        height: 150px;
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        &.avata-doctor {
+          border-radius: 100px;
+          margin-top: 10px;
+          margin-bottom: 10px;
+        }
+      }
+      img {
+        border-radius: 25px;
+        margin: auto;
+      }
+      h3 {
+        text-align: center;
+        margin-top: 5px;
+      }
+    }
+  }
+  .section-about-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+
+    .video-about {
+      width: 50%;
+      height: 300px;
+    }
+    .logo-about {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: 100px 100px 100px;
+      grid-gap: 10px;
+
+      .bg-image-about {
+        border-radius: 20px;
+        img {
+          width: 50%;
+        }
+      }
+      .bg-image-about:first-child {
+        text-align: center;
+        grid-column: 1/2;
+        grid-row: 1/2;
+      }
+      .bg-image-about:nth-child(2) {
+        text-align: center;
+        grid-column: 2/3;
+        grid-row: 1/2;
+      }
+      .bg-image-about:nth-child(3) {
+        text-align: center;
+        grid-column: 1/2;
+        grid-row: 2/3;
+      }
+      .bg-image-about:nth-child(4) {
+        text-align: center;
+        grid-column: 2/3;
+        grid-row: 2/3;
+      }
+      .bg-image-about:nth-child(5) {
+        text-align: center;
+        grid-column: 1/2;
+        grid-row: 3/4;
+      }
+      .bg-image-about:nth-child(6) {
+        text-align: center;
+        grid-column: 2/3;
+        grid-row: 3/4;
+      }
+    }
+  }
+  @media only screen and (max-width: 768px) {
+    .video-about {
+      width: 100% !important;
+      height: 250px !important;
+      margin-bottom: 20px;
+    }
+  }
+
+  // .section-about-content {
+  //   display: flex;
+  //   margin-bottom: 20px;
+  //   .content-left {
+  //     display: flex;
+  //     justify-content: center;
+  //     margin: 0 auto;
+  //     width: 100%;
+  //     iframe {
+  //       border-radius: 25px;
+  //     }
+  //   }
+  //   .content-right {
+  //     display: flex;
+  //     flex-wrap: wrap;
+  //     justify-content: space-around;
+  //     .bg-image-about {
+  //     }
+  //   }
+  // }
+}
+
+.section-share {
+  .section-container {
+    display: flex;
+    flex-direction: column;
+    padding: 20px 50px 20px 50px;
+    .section-header {
+      margin: 5px 0;
+      .title-section {
+        font-size: 24px;
+        font-weight: 600;
+      }
+      .btn-section {
+        float: right;
+        padding: 10px 15px;
+        border: none;
+        outline: none;
+        display: block;
+        background: rgb(255, 255, 255);
+        color: black;
+        cursor: pointer;
+        border-radius: 25px;
+        text-transform: uppercase;
+        &:hover {
+          color: #fff;
+          background: rgb(123, 237, 159);
+        }
+      }
+    }
+  }
+}
+.Home-Footer {
+  border: 1px solid #000000;
+  text-align: center;
+  font-size: 15px;
+  font-weight: 500;
+  background: #1b7fcccc;
+  a {
+    text-decoration: none;
+  }
+}
+button.slick-arrow.slick-next {
+  border-radius: 5px;
+  width: 50px;
+  background: #32aee2;
+  height: 50px;
+  &.slick-disabled {
+    display: none;
+    visibility: hidden;
+  }
+}
+button.slick-arrow.slick-prev {
+  border-radius: 5px;
+  width: 50px;
+  background: #32aee2;
+  height: 50px;
+  z-index: 1;
+  &.slick-disabled {
+    display: none;
+    visibility: hidden;
+  }
+}

@@ -1,0 +1,127 @@
+.doctor-schedule-container {
+  border-right: 1px solid #333;
+  height: 100%;
+
+  .all-schedule {
+    select {
+      border: none;
+      outline: none;
+      border-bottom: 1px solid #ddd;
+      padding: 10px 0;
+      color: #333;
+      font-weight: 600;
+    }
+  }
+
+  .all-availabel-time {
+    .text-calender {
+      color: #333;
+      margin: 10px 0;
+
+      span {
+        text-transform: uppercase;
+        margin-left: 10px;
+      }
+    }
+
+    .time-content {
+      .top-content {
+        display: flex;
+        gap: 10px;
+        flex-wrap: wrap;
+
+        button {
+          padding: 10px 10px;
+          border: none;
+          outline: none;
+          background-color: #fff8ae;
+          border-radius: 10px;
+          min-width: 150px;
+        }
+      }
+
+      .background-calendar {
+        margin: 0 auto;
+        text-align: center;
+
+        .image {
+          margin: 10px;
+          height: 90px;
+          background: url("../../../assets/Comprehensive-service/161350-iconkham-tong-quan.png") center center no-repeat;
+        }
+
+        span {
+        }
+      }
+
+      .bottom-content {
+        margin: 20px 0;
+      }
+    }
+  }
+}
+@media only screen and (max-width: 768px) {
+  .doctor-schedule-container {
+    border-right: 1px solid #333;
+    height: 100%;
+
+    .all-schedule {
+      select {
+        border: none;
+        outline: none;
+        border-bottom: 1px solid #ddd;
+        padding: 10px 0;
+        color: #333;
+        font-weight: 600;
+      }
+    }
+
+    .all-availabel-time {
+      .text-calender {
+        color: #333;
+        margin: 10px 0;
+
+        span {
+          text-transform: uppercase;
+          margin-left: 10px;
+        }
+      }
+
+      .time-content {
+        .top-content {
+          display: flex;
+          grid-gap: 5px;
+
+          flex-wrap: wrap;
+          justify-content: center;
+          button {
+            padding: 5px 5px;
+            border: none;
+            outline: none;
+            background-color: #fff8ae;
+            border-radius: 10px;
+            min-width: unset !important;
+          }
+        }
+
+        .background-calendar {
+          margin: 0 auto;
+          text-align: center;
+
+          .image {
+            margin: 10px;
+            height: 90px;
+            background: url("../../../assets/Comprehensive-service/161350-iconkham-tong-quan.png") center center no-repeat;
+          }
+
+          span {
+          }
+        }
+
+        .bottom-content {
+          margin: 20px 0;
+        }
+      }
+    }
+  }
+}

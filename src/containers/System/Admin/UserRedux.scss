@@ -1,0 +1,33 @@
+.user-redux-body {
+  .col-12,
+  .col-3 {
+    margin-bottom: 10px;
+  }
+  .form-control {
+    &.upload {
+      border: none;
+      display: flex;
+    }
+    .label-upload {
+      background: rgb(228, 228, 228);
+      cursor: pointer;
+      border-radius: 5px;
+      padding: 5px;
+      grid-gap: 5px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 60%;
+      &:hover {
+        opacity: 0.9;
+      }
+    }
+    .prev-image {
+      width: 40%;
+      height: 30px;
+      background: center center no-repeat;
+      background-size: contain;
+      cursor: pointer;
+    }
+  }
+}
