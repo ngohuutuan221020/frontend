@@ -97,8 +97,10 @@ class ManageSchedule extends Component {
       toast.error("Please select a Doctor");
       return;
     }
-    let formattedDate = new Date(currentDate).getTime();
-
+    // let formattedDate = new Date(currentDate).getTime();
+    let formattedDates = new Date(currentDate).getTime();
+    let formattedDate = formattedDates.toString();
+    
     if (rangeTime && rangeTime.length > 0) {
       let selectedTime = rangeTime.filter((item) => item.isSelected === true);
       if (selectedTime && selectedTime.length > 0) {
